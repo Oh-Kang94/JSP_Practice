@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style>
+	  		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
+		</style>
+	</head>
+	<body style="background-image: url('https://i.ibb.co/3493r17/cat.jpg'); background-image: no-repeat;">
+		<div align="center">
+		<form action="#" method="post">
+			<table>
+			<tr>
+			<td> 이름 :</td>
+			<td> <input type="text" name="userName" placeholder="아름을 입력"></td>
+			</tr>
+			
+			<tr>
+			<td>아이디 : 
+			</td>
+			<td><input type="text" name="userId"	placeholder="아이디를 입력" >
+			</td>
+			</tr>
+			
+			<tr>
+			<td>비밀번호 : 
+			</td>
+			<td><input type="password" name="userPassword">
+			</td>
+			</tr>
+			
+			<tr>
+			<td>연락처 : 
+			</td>
+			<td><input type="text" name="phone1" size ="5"> -	
+					 <input type="text" name="phone2" size ="5"> - 
+					 <input type="text" name="phone3" size ="5"> 
+			</td>
+			</tr>
+			
+			<tr>
+			<td>사진 : 
+			</td>
+			<td><input type = "file"	name ="picture">
+			</td>
+			</tr>
+			
+			<tr>
+			<td>	성별 구분 :
+			</td>
+			<td> <input type ="radio" name="gender" value="man" checked="checked">남자
+						<input type ="radio" name="gender" value="woman" checked="checked">여자
+			</td>
+			</tr>
+			
+			<tr>
+			<td>사용 언어 : 
+			</td>
+			<td><input type="checkbox" name="lang" value="kor" checked="checked">한글
+					<input type="checkbox" name="lang" value="eng">영어
+					<input type="checkbox" name="lang" value="jpn">일본어
+					<input type="checkbox" name="lang" value="chn">중국어
+			</td>
+			</tr>
+			
+			<tr>
+			<td>자기 소개 : 
+			</td>
+			<td><textarea rows="5" cols="20">간단하게 입력하세요.</textarea>
+			</td>
+			</tr>
+			
+			<tr>
+			<td>국적 : 
+			</td>
+			<td><select name = "nation">
+					<option>Korea</option>
+					<option>Japan</option>
+					<option>USA</option>
+					<option>China</option>
+				</select>
+			</td>
+			</tr>
+			
+			<tr>
+			<td>좋아하는 음식 : 
+					
+			</td>
+			<td><select	name = "food" multiple = "multiple">
+						<option>김치</option>
+						<option>불고기</option>
+						<option>파전</option>
+						<option>비빔밥</option>
+					</select>
+			</td>
+			</tr>
+			
+			<tr>
+			<td>
+			</td>
+			<td><input type="submit" name = "OK" value = "OK">
+			</td>
+			</tr>
+			
+			<!-- 중복선택이면 배열을 쓴다 생각하면 된다. -->
+			
+			</table>
+		</form>
+		</div>
+	</body>
+</html>
