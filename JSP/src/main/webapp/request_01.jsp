@@ -17,8 +17,9 @@
 		<a href = "http://localhost:8080/JSP/request_02.jsp?yourname=Cathy&yoursurname=Cat">Test</a>
 		<%
 		String name = "Crystal";
+		String surname = "Cats";
 		%>
-		<a href = "http://localhost:8080/JSP/request_02.jsp?yourname=<%=name%>">Test2</a>
-		<!--띄어쓰기는 금지이다. http의 프로토콜을 적을  -->
+		<a href = "http://localhost:8080/JSP/request_02.jsp?yourname=<%=name%>&yoursurname=<%=surname %>">Test2</a>
+		<!--띄어쓰기는 금지이다. http의 프로토콜을 적을 때 -->
 	</body>
 </html>

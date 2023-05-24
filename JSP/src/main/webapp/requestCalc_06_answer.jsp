@@ -14,19 +14,18 @@
 	double num1 = (double)Integer.parseInt(request.getParameter("num1"));
 	double num2 = (double)Integer.parseInt(request.getParameter("num2"));
 	
-	result += str + "<br/>";
-	
+	out.print(result += str + "<br/>");
 	if(str.contains("덧셈")){
-		result +="덧셈결과는" + String.format("%.1f",num1+num2)+"입니다.<br/>";
+		out.print(result +="덧셈결과는" + String.format("%.1f",num1+num2)+"입니다.<br/>");
 	}
 	if(str.contains("뺄셈")){
-		result +="뺄셈결과는" +  String.format("%.1f",num1-num2) +"입니다.<br/>";
+		out.print(result +="뺄셈결과는" +  String.format("%.1f",num1-num2) +"입니다.<br/>");
 	}
 	if(str.contains("곱셈")){
-		result +="곱셈결과는" + String.format("%.1f",num1*num2)+"입니다.<br/>";
+		out.print(result +="곱셈결과는" + String.format("%.1f",num1*num2)+"입니다.<br/>");
 	}
 	if(str.contains("나눗셈")){
-		result +="나눗셈결과는" +  String.format("%.1f",num1/num2) +"입니다.<br/>";
+		out.print(result +="나눗셈결과는" +  String.format("%.1f",num1/num2) +"입니다.<br/>");
 	}
 			
 
